@@ -1,1 +1,1 @@
-Kellian School. All Rights Reserved!
+The Kellian School. All Rights Reserved!

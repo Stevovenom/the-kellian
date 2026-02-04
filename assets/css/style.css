@@ -117,7 +117,7 @@ img {
 
 .ptb-100 {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 70px;
 }
 
 .pt-100 {
@@ -156,7 +156,7 @@ Default btn CSS
 .default-btn {
   display: inline-block;
   padding: 12px 35px;
-  background-color: #ea512e;
+  background-color: #FF6B35;
   color: #ffffff !important;
   border-radius: 10px;
   font-size: 16px;
@@ -173,7 +173,7 @@ Default btn CSS
   top: 0;
   width: 100%;
   height: 0%;
-  background-color: #f5890d;
+  background-color: #FF4500;
   z-index: -1;
   transition: 0.5s;
   border-radius: 10px;
@@ -194,7 +194,7 @@ Default btn CSS
 .optional-btn {
   display: inline-block;
   padding: 12px 35px;
-  background-color: #f5890d;
+  background-color: #FF6B35;
   color: #ffffff !important;
   border-radius: 10px;
   font-size: 16px;
@@ -212,7 +212,7 @@ Default btn CSS
   bottom: 0;
   width: 100%;
   height: 0%;
-  background-color: #ea512e;
+  background-color: #FF4500;
   z-index: -1;
   transition: 0.5s;
   border-radius: 10px;
@@ -232,8 +232,8 @@ Section Title CSS
   margin-bottom: 45px;
 }
 .section-title span {
-  font-size: 20px;
-  color: #ea512e;
+  font-size: 30px;
+  color: #FF6B35;
   font-weight: 600;
   font-family: "Sacramento", cursive;
 }
@@ -1434,7 +1434,7 @@ Class Area CSS
   margin-bottom: 15px;
 }
 .single-class .class-content h3 a {
-  color: #1b0238;
+  color: #0052CC;
 }
 .single-class .class-content p {
   margin-bottom: 0;
@@ -1464,10 +1464,31 @@ Class Area CSS
 }
 .single-class .class-content .class-btn {
   margin-top: 25px;
+  text-align: center;
 }
 .single-class .class-content .class-btn .default-btn {
   padding: 10px 30px;
 }
+
+/* Card Enhancements with Subtle Blue Accents */
+.single-class .class-content,
+.event-box-item,
+.quote-item,
+.apply-form,
+.overview-content,
+.class-details-information,
+.teacher-details-information,
+.event-details-information,
+.enrollment-accordion,
+.faq-accordion {
+    border-left: 4px solid #0052CC;
+}
+
+/* Badge & Status Colors */
+.single-class .class-content .price {
+    background-color: #FF6B35;
+}
+
 .single-class:hover .class-image img {
   transform: rotate(2deg) scale(1.2);
 }
@@ -1476,6 +1497,9 @@ Class Area CSS
 }
 .single-class:hover .class-content h3 a {
   color: #ea512e;
+}
+.single-class:hover .class-content .price {
+    background-color: #FF4500;
 }
 
 .class-shape .shape-1 {
@@ -1489,6 +1513,10 @@ Class Area CSS
   right: 0;
   bottom: 0;
   z-index: -1;
+}
+
+.class-area.bg-fdf6ed {
+    background-color: #f0f7ff;
 }
 
 /*================================================
@@ -1893,7 +1921,7 @@ Testimonials Area CSS
   width: 65px;
   line-height: 65px;
   background-color: #ffffff;
-  color: #ea512e;
+  color: #FF6B35;
   font-size: 30px;
   border-radius: 50px;
   transition: 0.5s;
@@ -1912,13 +1940,13 @@ Testimonials Area CSS
 }
 .testimonials-item .testimonials-item-box .info-box span {
   display: block;
-  color: #ea512e;
+  color: #FF6B35;
   font-size: 15px;
   margin-top: 5px;
   font-weight: 600;
 }
 .testimonials-item .testimonials-item-box:hover .icon i {
-  background-color: #ea512e;
+  background-color: #FF6B35;
   color: #ffffff;
 }
 .testimonials-item .testimonials-image {
@@ -1943,7 +1971,7 @@ Testimonials Area CSS
   top: 40%;
   transform: translateY(-40%);
   padding: 0;
-  background: #ea512e;
+  background: #FF6B35;
   color: #ffffff;
   border-radius: 50px;
   transition: 0.5s;
@@ -1959,7 +1987,7 @@ Testimonials Area CSS
 }
 .testimonials-slides.owl-theme .owl-nav [class*=owl-]:hover {
   color: #ffffff;
-  background-color: #f5890d;
+  background-color: #FF4500;
 }
 .testimonials-slides.owl-theme:hover .owl-nav {
   opacity: 1;
@@ -1982,7 +2010,7 @@ Testimonials Area CSS
   content: "";
   height: 100%;
   width: 100%;
-  background-color: #ea512e;
+  background-color: #FF6B35;
   left: 0;
   right: 0;
   top: 0;
@@ -2005,7 +2033,7 @@ Testimonials Area CSS
 }
 .feedback-slides .feedback-item .feedback-content .feedback-info span {
   font-size: 16px;
-  color: #ea512e;
+  color: #FF6B35;
   font-weight: 600;
 }
 .feedback-slides.owl-theme .owl-nav {
@@ -2019,7 +2047,7 @@ Testimonials Area CSS
 .feedback-slides.owl-theme .owl-nav [class*=owl-] {
   margin: 0;
   padding: 0;
-  background: #ea512e;
+  background: #FF6B35;
   color: #ffffff;
   border-radius: 50px;
   transition: 0.5s;
@@ -2035,8 +2063,15 @@ Testimonials Area CSS
 }
 .feedback-slides.owl-theme .owl-nav [class*=owl-]:hover {
   color: #ffffff;
-  background-color: #f5890d;
+  background-color: #FF4500;
 }
+
+/* Testimonials & Cards */
+.testimonials-item .testimonials-item-box {
+    background-color: #f0f7ff;
+    border: 1px solid #e0eaff;
+}
+
 
 /*================================================
 Event Area CSS
@@ -2490,6 +2525,36 @@ Fun Facts Area CSS
 /*================================================
 Choose Area CSS
 =================================================*/
+.choose-area {
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+.choose-area .title_sections p {
+    max-width: auto;
+    margin: 0 ;
+    line-height: 1.8;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.faq_header {
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+.accordion-content {
+    padding: 20px 24px 26px;
+    line-height: 1.75;
+    font-size: 15.5px;
+}
+.block_faq dl dt:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.theme_btn_all {
+    margin-top: 60px;
+}
+
 .single-choose {
   text-align: center;
   margin-bottom: 30px;
@@ -2560,6 +2625,18 @@ Choose Area CSS
 .single-choose-item .choose-btn {
   margin-top: 30px;
 }
+
+.faq_section.type_two {
+    padding-right: 30px;
+}
+
+@media (max-width: 1080px) {
+    .faq_section.type_two {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+}
+
 
 /*================================================
 Gallery Area CSS
@@ -2763,7 +2840,7 @@ Newsletter Area CSS
   padding-left: 25px;
   border-radius: 5px;
   outline: 0;
-  color: #1b0238;
+  color: #0052CC;
 }
 .newsletter-form .input-newsletter::-moz-placeholder {
   color: #6b6b84;
@@ -2775,7 +2852,7 @@ Newsletter Area CSS
   position: absolute;
   right: 4px;
   top: 4px;
-  background-color: #ea512e;
+  background-color: #FF6B35;
   color: #ffffff;
   border: none;
   height: 52px;
@@ -2789,7 +2866,7 @@ Newsletter Area CSS
   font-weight: 500;
 }
 .newsletter-form button:hover {
-  background-color: #1b0238;
+  background-color: #0052CC;
   color: #ffffff;
 }
 .newsletter-form #validator-newsletter {
@@ -2815,6 +2892,29 @@ Newsletter Area CSS
   transform: translateY(-60%);
   max-width: 250px;
   z-index: -1;
+}
+
+/* Light Blue Background Accents */
+.class-area.bg-fdf6ed {
+    background-color: #f0f7ff;
+}
+
+.event-area.event-item-two .event-box-item {
+    background-color: #f0f7ff;
+    border-left: 4px solid #0052CC;
+}
+
+.single-blog-item .blog-content {
+    background-color: #f0f7ff;
+    border-left: 4px solid #0052CC;
+}
+
+.testimonials-area.bg-color {
+    background-color: #f0f7ff;
+}
+
+.newsletter-area {
+    background-color: #f0f7ff;
 }
 
 /*================================================
@@ -3569,7 +3669,7 @@ Register Area CSS
   transition: 0.5s;
 }
 .error-content .default-btn:hover {
-  background-color: #f5890d;
+  background-color: #FF4500;
 }
 
 /*================================================
@@ -3910,6 +4010,38 @@ Contact Area CSS
   position: relative;
   z-index: 1;
   border: none;
+}
+
+/* Secondary Button Style */
+.default-btn.secondary {
+    background-color: #ffffff;
+    color: #0052CC !important;
+    border: 2px solid #0052CC;
+}
+
+.default-btn.secondary::before {
+    background-color: #0052CC;
+    height: 0%;
+}
+
+.default-btn.secondary:hover {
+    color: #ffffff !important;
+    background-color: #0052CC;
+}
+
+.default-btn.secondary:hover::before {
+    height: 100%;
+}
+
+/* CTA Buttons in Dark Sections */
+.main-banner-content .banner-btn .default-btn,
+.page-banner-area .default-btn {
+    background-color: #FF6B35;
+}
+
+.main-banner-content .banner-btn .default-btn:hover,
+.page-banner-area .default-btn:hover {
+    background-color: #FF4500;
 }
 
 #map iframe {
@@ -5028,7 +5160,7 @@ Footer Area CSS
   content: "";
   height: 100%;
   width: 100%;
-  background-color: #000000;
+  background-color: #345de2;
   left: 0;
   right: 0;
   top: 0;
@@ -5440,8 +5572,8 @@ facebook video section CSS
 }
 
 .logo-text.small {
-    font-size: 12px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 550;
     text-transform: uppercase;
 }
 
@@ -5555,4 +5687,9 @@ facebook video section CSS
     background: #f8f9fa;
     border-radius: 0 0 5px 5px;
     margin-bottom: 10px;
+}
+
+.who-we-are .facebook-video-container {
+  max-width: 100%;
+  margin: 0;
 }
