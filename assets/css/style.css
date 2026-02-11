@@ -935,6 +935,43 @@ Navbar Area CSS
     display: block;
   }
 }
+
+/* Default desktop size */
+.header-logo--desktop {
+    display: block;
+}
+
+.header-logo--mobile {
+    display: none;
+}
+
+/* Mobile view - make logo bigger */
+@media only screen and (max-width: 1199px) {
+    .header-logo--desktop {
+        display: none;
+    }
+    
+    .header-logo--mobile {
+        display: block;
+        width: 80px !important;     /* ← adjust this value */
+        height: 80px !important;
+        margin: 0 auto;             /* center if needed */
+    }
+
+    /* Optional: make it even bigger on very small screens */
+    @media only screen and (max-width: 576px) {
+        .header-logo--mobile {
+            width: 70px !important;
+            height: 70px !important;
+        }
+    }
+
+    /* Make sure the container gives it space */
+    .logo-container {
+        padding: 10px 0;
+        text-align: center;
+    }
+}
 /*================================================
 Main Banner Area CSS
 =================================================*/

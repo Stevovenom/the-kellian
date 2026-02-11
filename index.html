@@ -56,12 +56,26 @@
         <div class="main-responsive-nav">
             <div class="container">
                 <div class="main-responsive-menu">
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="assets/img/logo.png" class="black-logo" alt="image">
-                            <img src="assets/img/logo-2.png" class="white-logo" alt="image">
-                        </a>
-                    </div>
+                    <header>
+                        <div class="logo-container">
+                            <svg viewBox="0 0 168 168" width="56" height="56" class="header-logo header-logo--desktop">
+                                <circle cx="84" cy="84" r="82" stroke-width="4" fill="transparent" class="logo-ring" />
+                                <image href="assets/img/kellian/logo.jpg" x="2" y="2" width="164" height="164"
+                                    clip-path="circle(82px at 82px 82px)" />
+                            </svg>
+
+                            <!-- Mobile version - bigger size -->
+                            <!-- <svg viewBox="0 0 168 168" 
+                             width="80" height="80" 
+                             class="header-logo header-logo--mobile">
+                            <circle cx="84" cy="84" r="82" stroke-width="4" fill="transparent" class="logo-ring" />
+                            <image href="assets/img/kellian/logo.jpg" x="2" y="2" width="164" height="164"
+                                   clip-path="circle(82px at 82px 82px)" />
+                        </svg> -->
+                        </div>
+
+                        <!-- Rest of your header content -->
+                    </header>
                 </div>
             </div>
         </div>
@@ -821,7 +835,7 @@
         <div class="container">
             <div class="copyright-area-content">
                 <p>
-                    Copyright Kellian. All Rights Reserved by
+                    Copyright &copy; <span id="currentYear"></span> The Kellian School. All Rights Reserved by
                     <a href="https://smartshule.com/" target="_blank">
                         Smartshule
                     </a>
